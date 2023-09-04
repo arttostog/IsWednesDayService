@@ -1,4 +1,4 @@
-package me.arttostog.IsWednesdayService.Service.API;
+package me.arttostog.IsWednesdayService.Service.RequestController;
 
 import me.arttostog.IsWednesdayService.Service.Utils.Utils;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-class APITests {
+class RequestControllerTests {
 	@Autowired
 	private MockMvc mvc;
 

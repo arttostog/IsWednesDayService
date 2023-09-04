@@ -1,4 +1,4 @@
-package me.arttostog.IsWednesdayService.Service.API;
+package me.arttostog.IsWednesdayService.Service.Response;
 
 import me.arttostog.IsWednesdayService.Service.Utils.Utils;
 

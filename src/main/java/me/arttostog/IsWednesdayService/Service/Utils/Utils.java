@@ -1,7 +1,7 @@
 package me.arttostog.IsWednesdayService.Service.Utils;
 
 import com.google.gson.Gson;
-import me.arttostog.IsWednesdayService.Service.API.IsWednesdayResponse;
+import me.arttostog.IsWednesdayService.Service.Response.IsWednesdayResponse;
 
 import java.util.Date;
 

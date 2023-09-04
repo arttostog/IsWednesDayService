@@ -1,4 +1,4 @@
-package me.arttostog.IsWednesdayService.Service.API;
+package me.arttostog.IsWednesdayService.Service.RequestController;
 
 import me.arttostog.IsWednesdayService.Service.Utils.Utils;
 import org.springframework.web.bind.annotation.GetMapping;
