@@ -1,1 +1,0 @@
-docker stop is_wednesday_service
