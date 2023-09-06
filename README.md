@@ -2,7 +2,7 @@
 
 # IsWednesday Service
 
-## About
+### About
 
 </div>
 
@@ -10,7 +10,7 @@ A simple service that will send you information about whether today is **Wednesd
 
 <div align="center">
 
-## Usage
+### Usage
 
 </div>
 
