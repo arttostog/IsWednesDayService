@@ -1,11 +1,21 @@
 package me.arttostog.IsWednesdayService.Service.Response;
 
-import me.arttostog.IsWednesdayService.Service.Utils.Utils;
+import com.google.gson.Gson;
+
+import java.util.Date;
 
 public class IsWednesdayResponse {
-	public boolean IsWednesday;
+	public final boolean IsWednesday;
 
 	public IsWednesdayResponse() {
-		this.IsWednesday = Utils.IsWednesday();
+		IsWednesday = isWednesday();
+	}
+
+	public String createResponse() {
+		return new Gson().toJson(this);
+	}
+
+	private boolean isWednesday() {
+		return new Date().toString().split(" ")[0].equalsIgnoreCase("Wed");
 	}
 }

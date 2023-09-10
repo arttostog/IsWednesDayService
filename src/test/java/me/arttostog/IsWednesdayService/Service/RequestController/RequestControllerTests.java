@@ -1,6 +1,6 @@
 package me.arttostog.IsWednesdayService.Service.RequestController;
 
-import me.arttostog.IsWednesdayService.Service.Utils.Utils;
+import me.arttostog.IsWednesdayService.Service.Response.IsWednesdayResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +29,6 @@ class RequestControllerTests {
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
 				.andReturn();
 
-		if (!IsWednesdayResult.getResponse().getContentAsString().equals(Utils.CreateResponse())) throw new Exception("Response error!");
+		if (!IsWednesdayResult.getResponse().getContentAsString().equals(new IsWednesdayResponse().createResponse())) throw new Exception("Response error!");
 	}
 }
