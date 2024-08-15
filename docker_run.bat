@@ -1,1 +1,0 @@
-docker run -d -p 80:6494 -t is_wednesday_service:latest

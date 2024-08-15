@@ -5,17 +5,14 @@ import com.google.gson.Gson;
 import java.util.Date;
 
 public class IsWednesdayResponse {
-	public final boolean IsWednesday;
+	private static final Gson gson = new Gson();
+	public final boolean IS_WEDNESDAY;
 
 	public IsWednesdayResponse() {
-		IsWednesday = isWednesday();
+		IS_WEDNESDAY = new Date().toString().contains("Wed");
 	}
 
 	public String createResponse() {
-		return new Gson().toJson(this);
-	}
-
-	private boolean isWednesday() {
-		return new Date().toString().split(" ")[0].equalsIgnoreCase("Wed");
+		return gson.toJson(this);
 	}
 }

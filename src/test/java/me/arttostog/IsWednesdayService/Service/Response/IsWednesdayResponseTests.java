@@ -1,6 +1,5 @@
-package me.arttostog.IsWednesdayService.Service.RequestController;
+package me.arttostog.IsWednesdayService.Service.Response;
 
-import me.arttostog.IsWednesdayService.Service.Response.IsWednesdayResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-class RequestControllerTests {
+class IsWednesdayResponseTests {
 	@Autowired
 	private MockMvc mvc;
 
@@ -29,6 +28,7 @@ class RequestControllerTests {
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
 				.andReturn();
 
-		if (!IsWednesdayResult.getResponse().getContentAsString().equals(new IsWednesdayResponse().createResponse())) throw new Exception("Response error!");
+		if (!IsWednesdayResult.getResponse().getContentAsString().equals(new IsWednesdayResponse().createResponse()))
+			throw new Exception("Response error!");
 	}
 }
