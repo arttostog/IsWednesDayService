@@ -14,5 +14,5 @@ A simple service that will send you information about whether today is **Wednesd
 
 </div>
 
-- Type in any web browser `http://localhost:6494/api/is_wednesday` or `http://localhost/api/is_wednesday` if you are using **docker**.
+- Type in any web browser `http://localhost:6494/api/is_wednesday` and press `Enter`.
 - Get a response!
